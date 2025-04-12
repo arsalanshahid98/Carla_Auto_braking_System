@@ -71,11 +71,11 @@ road_model = YOLO("road_marking_detector.pt")
 3.	Once Carla is started and you can move freely around as spectator, execute the abs.ipynb script, two windows will popup, a pygame window and an inference window.
 4.	Pygame window is for controlling the vehicle, the following are the key bindings for vehicle controles: 
 ```
-W: Move forward
-S: Brake
-A:  Turn left
-D: Turn right
-R: Toggle Reverse Gear
+W:	Move forward
+S:	Brake
+A:	Turn left
+D:	Turn right
+R:	Toggle Reverse Gear
 ```
 5.	You can drive around in the vehicle and test around, the ABS currently works for vehicles and Crosswalks.
 </br>

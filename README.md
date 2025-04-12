@@ -18,10 +18,9 @@ To connect your Jupyter notebook with Carla, OR to connect Carla with python via
 4.	Since I’m using python 3.11.11, I installed wheel file carla-0.10.0-cp311-cp311-win_amd64.whl.
 5.	Following is how you install the wheel file: `pip install <wheel-file-name>.whl`  in my case it was `pip install carla-0.10.0-cp311-cp311-win_amd64.whl` .
 6.	You can `pip list` and check the site packages and verify that Carla is there.
-
-Check if all the perquisites are correctly installed and working as they are supposed to be:</br>
-Open cmd.exe or powershell prompt through anaconda and type `python --version` , it should print your python version.</br>
-Open your jupyter lab and check your pytorch: 
+</br>Check if all the perquisites are correctly installed and working as they are supposed to be:</br>
+1.	Open cmd.exe or powershell prompt through anaconda and type `python --version` , it should print your python version.</br>
+2.	Open your jupyter lab and check your pytorch: 
 ```python
 #Import pytorch
 import torch
@@ -33,5 +32,31 @@ print(f"CUDA Available: {torch.cuda.is_available()}")
 if torch.cuda.is_available():
     print(f"Number of GPUs available: {torch.cuda.device_count()}")
     print(f"GPU Name: {torch.cuda.get_device_name(0)}")
+```
+3.	Check your Carla installation via jupyter, first start your CarlaUnreal.exe (or any version equivalent), once you are in spectator mode and can move around as a spectator, type the following in jupyter and run: 
+```python
+Import carla
+Import random
+
+#connect to simulator
+client = carla.Client('localhost', 2000) # carla server starts on port: 2000
+world = client.get_world()
+
+#get location of the client (I use this to confirm the connection with the sim)
+spectator = world.get_spectator()
+transform = spectator.get_transform()
+spectator.set_transform(carla.Transform())
+```
+The above code should connect to carla simulator and atleast move or change the camera location which indicates successful connection.
+4.	Verify the remaining following imports if you don’t have these make sure they are installed before going forward: 
+```python
+import carla # already verified
+import numpy as np
+import cv2
+import threading
+import queue
+import pygame
+import time
+from ultralytics import YOLO
 ```
 

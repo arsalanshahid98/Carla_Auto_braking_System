@@ -1,7 +1,7 @@
 # Carla Auto Braking System
-##Requirements and Setup before starting
+## Requirements and Setup before starting
 
-###The following are the requirements and software I had or downloaded: 
+### The following are the requirements and software I had or downloaded: 
 Python version: 3.11.11 (Carla 0.10.0 works with latest python version)
 Carla version: 0.10.0
 Pytorch 2.6.0+cu126 for Cuda 12.6 (my own Cuda version is 12.8 but pytorch for cuda 12.6 works just fine)

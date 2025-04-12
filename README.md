@@ -47,7 +47,8 @@ world = client.get_world()
 spectator = world.get_spectator()
 transform = spectator.get_transform()
 spectator.set_transform(carla.Transform())
-```The above code should connect to carla simulator and atleast move or change the camera location which indicates successful connection.
+```
+The above code should connect to carla simulator and atleast move or change the camera location which indicates successful connection.
 4.	Verify the remaining following imports if you don’t have these make sure they are installed before going forward: 
 ```python
 import carla # already verified

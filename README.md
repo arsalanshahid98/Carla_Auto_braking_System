@@ -81,11 +81,14 @@ R:	Toggle Reverse Gear
 </br>
 ## Results: 
 The following are the inference results, both model perform inferences and the abs system is applied accordingly.</br>
+<img src="https://github.com/user-attachments/assets/41de05ca-ad85-4dbf-9e67-68513b1feb46">
+
 ![image](https://github.com/user-attachments/assets/771f8f88-9462-4e9a-81b7-3325a076d455)
 ![image](https://github.com/user-attachments/assets/71214306-f086-445a-a58c-bf724a678e75)
 ![image](https://github.com/user-attachments/assets/3c6d40e6-28fb-49d6-921b-9b258799379e)
 ![image](https://github.com/user-attachments/assets/f8d96a91-b497-4d68-a4eb-835fbd76a8ad)
 ![image](https://github.com/user-attachments/assets/61dab2d1-090f-484d-baa8-45bd6a4a67e0)
 ![image](https://github.com/user-attachments/assets/34e9846f-c891-4b00-bc01-d2108614beb4)
+
 </br>
 As seen above this is what is expected from the driving experience, currently the ABS works for crosswalks and vehicles, for vehicles it puts the car to a complete stop if it is about to crash, and for crosswalks, it only slows down the vehicle if the vehicle is passing by too fast.

@@ -76,5 +76,6 @@ A:  Turn left
 D: Turn right
 R: Toggle Reverse Gear
 ```
-5.	The   
+5.	You can drive around in the vehicle and test around, the ABS currently works for vehicles and Crosswalks.
+The
 

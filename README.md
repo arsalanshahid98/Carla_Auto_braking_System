@@ -59,7 +59,7 @@ import pygame
 import time
 from ultralytics import YOLO
 ```
-### Running the abs Script
+## Running the abs Script
 1.	Make sure the model files road_marking_detector.pt and vehicle_detector(y11).pt are in the same directory as abs.ipynb. If not then change the paths in the following variables to the model files: 
 ```python
 # Load YOLO models

@@ -34,7 +34,7 @@ if torch.cuda.is_available():
     print(f"Number of GPUs available: {torch.cuda.device_count()}")
     print(f"GPU Name: {torch.cuda.get_device_name(0)}")
 ```
-3.	Check your Carla installation via jupyter, first start your CarlaUnreal.exe (or any version equivalent), once you are in spectator mode and can move around as a spectator, type the following in jupyter and run: 
+3.	Check your Carla installation via jupyter, first start your CarlaUnreal.exe (or any version equivalent), once you are in spectator mode and can move around as a spectator, The above code should connect to carla simulator and atleast move or change the camera location which indicates successful connection, type the following in jupyter and run: 
 ```python
 Import carla
 Import random
@@ -48,7 +48,6 @@ spectator = world.get_spectator()
 transform = spectator.get_transform()
 spectator.set_transform(carla.Transform())
 ```
-The above code should connect to carla simulator and atleast move or change the camera location which indicates successful connection.
 4.	Verify the remaining following imports if you don’t have these make sure they are installed before going forward: 
 ```python
 import carla # already verified

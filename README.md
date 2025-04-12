@@ -26,7 +26,8 @@ Open your jupyter lab and check your pytorch:
 import torch
 #Check pytorch version
 print(torch.__version__)
-#This will print whether CUDA is available and, if so, the number of GPUs and the name of the first GPU, basically this is to verify if pytorch can use your gpu
+#This will print whether CUDA is available and, if so, the number of GPUs and the name of the first GPU
+#basically this is to verify if pytorch can use your gpu
 print(f"CUDA Available: {torch.cuda.is_available()}")
 if torch.cuda.is_available():
     print(f"Number of GPUs available: {torch.cuda.device_count()}")

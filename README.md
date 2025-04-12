@@ -59,4 +59,22 @@ import pygame
 import time
 from ultralytics import YOLO
 ```
+### Running the abs Script
+1.	Make sure the model files road_marking_detector.pt and vehicle_detector(y11).pt are in the same directory as abs.ipynb. If not then change the paths in the following variables to the model files: 
+```python
+# Load YOLO models
+vehicle_model = YOLO("vehicle_detector(y11).pt")
+road_model = YOLO("road_marking_detector.pt")
+```
+2.	Start Carla using CarlaUnreal.exe OR use the following command in cmd/powershell if your system can’t handle a heavy load `CarlaUnreal.exe -quality-level=Low -ResX=800 -ResY=600 -Windowed -NoVSyn -benchmark -fixed-time-step=0.05` you can check out Carla’s documentation for more custom commands.
+3.	Once Carla is started and you can move freely around as spectator, execute the abs.ipynb script, two windows will popup, a pygame window and an inference window.
+4.	Pygame window is for controlling the vehicle, the following are the key bindings for vehicle controles: 
+```
+W: Move forward
+S: Brake
+A:  Turn left
+D: Turn right
+R: Toggle Reverse Gear
+```
+5.	The   
 

@@ -19,7 +19,7 @@ To connect your Jupyter notebook with Carla, OR to connect Carla with python via
 5.	Following is how you install the wheel file: `pip install <wheel-file-name>.whl`  in my case it was `pip install carla-0.10.0-cp311-cp311-win_amd64.whl` .
 6.	You can `pip list` and check the site packages and verify that Carla is there.
 
-</br></br>Check if all the perquisites are correctly installed and working as they are supposed to be:</br>
+Check if all the perquisites are correctly installed and working as they are supposed to be:</br>
 Open cmd.exe or powershell prompt through anaconda and type `python --version` , it should print your python version.</br>
 Open your jupyter lab and check your pytorch: 
 ```python
